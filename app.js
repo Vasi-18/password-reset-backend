@@ -15,7 +15,7 @@ const port = 8009;
 app.use(express.json());
 app.use(cookiParser());
 app.use(cors());
-app.use(router);
+app.use("/api",router);
 
 
 app.listen(port,()=>{
